@@ -1267,15 +1267,15 @@ evalmachine ()
 
 	TOOLABI=''
 	case ${MACHINE_GNU_ARCH} in
-	"arm64"|"aarch64")
+	"amd64"|"x86_64")
 		probex86
 		if ${THIRTYTWO} ; then
 			MACHINE="i386"
 			MACHINE_GNU_ARCH="i486"
 			TOOLABI="elf"
 		else
-			MACHINE="evbarm64-el"
-			MACHINE_GNU_ARCH="aarch64"
+			MACHINE="amd64"
+			MACHINE_GNU_ARCH="x86_64"
 		fi
 		;;
 	"i386"|"i486"|"i586"|"i686")
