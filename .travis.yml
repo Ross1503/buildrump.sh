@@ -4,6 +4,10 @@ compiler:
   - gcc
   - clang
 
+arch:
+  - amd64
+  - arm64
+
 sudo: false
 
 before_script:
