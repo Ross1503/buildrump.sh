@@ -1274,7 +1274,7 @@ evalmachine ()
 			MACHINE_GNU_ARCH="i486"
 			TOOLABI="elf"
 		else
-			MACHINE="arm64"
+			MACHINE="evbarm64-el"
 			MACHINE_GNU_ARCH="aarch64"
 		fi
 		;;
