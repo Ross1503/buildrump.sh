@@ -785,6 +785,7 @@ makebuild ()
 	    && appendvar DIRS_second ${SRCDIR}/sys/rump/share
 
 	if [ ${MACHINE} = "i386" -o ${MACHINE} = "amd64" \
+	     -o ${MACHINE} = "arm64" \
 	     -o ${MACHINE#evbearm} != ${MACHINE} \
 	     -o ${MACHINE#evbppc} != ${MACHINE} ]; then
 		DIRS_emul=sys/rump/kern/lib/libsys_linux
